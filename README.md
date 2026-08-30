@@ -1,4 +1,4 @@
-# Detecting MSI status from H&E slides in colorectal cancer
+# Discerning MSI status from H&E slides in colorectal cancer
 
 A reproduction of [Kather et al. 2019](https://doi.org/10.1038/s41591-019-0462-y) using a
 frozen pathology foundation model (UNI2-h) and a small attention-MIL head (CLAM), evaluated
