@@ -4,23 +4,18 @@ A reproduction of [Kather et al. 2019](https://doi.org/10.1038/s41591-019-0462-y
 frozen pathology foundation model (UNI2-h) and a small attention-MIL head (CLAM), evaluated
 with 5-fold patient-level cross-validation on TCGA-COAD.
 
-📄 **Write-up:** [link to post]
-📓 **Notebook:** `Phase2_MSI_CLAM_CV.ipynb` 
 ---
 
 ## Method
 
-![architecture](figures/msi_architecture.png)
-
-**Two stages, one of which trains.**
-
-- **Encoder — frozen.** UNI2-h ([Chen et al. 2024](https://doi.org/10.1038/s41591-024-02857-3)),
+**Encoder — frozen.** UNI2-h ([Chen et al. 2024](https://doi.org/10.1038/s41591-024-02857-3)),
   a pathology foundation model pretrained on 100k+ slides, converts each tile into a 1536-dim
   embedding. Embeddings were **pre-extracted and released** by Mahmood Lab
   ([`MahmoodLab/UNI2-h-features`](https://huggingface.co/datasets/MahmoodLab/UNI2-h-features)),
   so the encoder is never run here. This is what makes the project feasible on a free Colab T4:
   the expensive one-time upstream work was already done by someone else.
-- **Aggregator — trained.** CLAM_SB ([Lu et al. 2021](https://doi.org/10.1038/s41551-020-00682-w)),
+
+**Aggregator — trained.** CLAM_SB ([Lu et al. 2021](https://doi.org/10.1038/s41551-020-00682-w)),
   gated attention-MIL with an instance-level clustering loss. A `Linear(1536→1024)` layer bridges
   the dimension mismatch. This is the only part that learns.
 
