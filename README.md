@@ -4,8 +4,6 @@ A reproduction of [Kather et al. 2019](https://doi.org/10.1038/s41591-019-0462-y
 frozen pathology foundation model (UNI2-h) and a small attention-MIL head (CLAM), evaluated
 with 5-fold patient-level cross-validation on TCGA-COAD.
 
----
-
 ## Method
 
 **Encoder — frozen.** UNI2-h ([Chen et al. 2024](https://doi.org/10.1038/s41591-024-02857-3)),
@@ -29,8 +27,6 @@ across folds.
 **Training.** 3 epochs, `Adam(lr=1e-4)`, `batch_size=1` (bags have variable tile counts and
 can't be stacked), class-weighted `CrossEntropyLoss` with `reduction='sum'`.
 
----
-
 ## Reproducing
 
 ```bash
@@ -48,7 +44,6 @@ can't be stacked), class-weighted `CrossEntropyLoss` with `reduction='sum'`.
 To rerun the permuted-label control, set `PERMUTE_LABELS = True` in the mode cell, **restart the
 kernel**, and run again. The guard will confirm the permutation reached the training loop.
 
----
 
 ## Repository contents
 
@@ -61,8 +56,6 @@ oof_patient_level.csv         aggregated to patient level
 
 Every metric in this README is recomputable from `oof_predictions.csv` in seconds, without
 retraining anything.
-
----
 
 ## References
 
