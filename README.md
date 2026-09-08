@@ -714,7 +714,7 @@ to:
 
 ---
 
-# 23. Planned next experiments
+# 23. Potential next experiments
 
 Highest priority:
 
