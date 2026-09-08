@@ -441,7 +441,7 @@ Macro AUROC                    0.895
 
 This supports the idea that score-scale differences between independently trained folds explain part of the pooling gap.
 
-## However, the notebook intentionally avoids claiming that the entire gap is caused by calibration or score scale. Fold prevalence and other distributional differences can also contribute.
+However, the notebook intentionally avoids claiming that the entire gap is caused by calibration or score scale. Fold prevalence and other distributional differences can also contribute.
 
 # 14. Mean-pooling baseline
 
@@ -469,7 +469,7 @@ The fold-to-fold standard deviation is approximately 0.075.
 
 Therefore:
 
-> **This experiment does not establish that CLAM attention provides meaningful improvement over simple mean pooling at this sample size.**
+This experiment does not establish that CLAM attention provides meaningful improvement over simple mean pooling at this sample size.
 
 The more conservative interpretation is that **the pretrained UNI2-h representation already contains substantial predictive information**, while the additional 2.36M-parameter aggregation head has not been shown to earn its complexity.
 
@@ -559,7 +559,7 @@ The notebook supports this experiment through:
 GROUP_COL = "site_id"
 ```
 
-## but the current saved results include only the main patient-grouped run.
+but the current saved results include only the main patient-grouped run.
 
 # 18. Negative control
 
@@ -579,7 +579,7 @@ AUROC ≈ 0.5
 
 A substantially higher result would indicate either a wiring problem or a potential source of leakage.
 
-## The current v3 notebook contains this control, but the saved `permuted` output is not yet present.
+The current v3 notebook contains this control, but the saved `permuted` output is not yet present.
 
 # 19. Reproducibility and run configuration
 
