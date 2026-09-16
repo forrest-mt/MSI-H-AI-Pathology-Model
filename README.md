@@ -1,6 +1,6 @@
-# Discerning MSI status from H&E slides in colorectal cancer
+# Discerning MSI-H vs MSS status from H&E slides in colorectal cancer
 
-# MSI-H vs MSS from H&E
+<img width="1774" height="646" alt="ChatGPT Image Sep 12, 2026, 07_34_14 PM" src="https://github.com/user-attachments/assets/8abf8d12-a029-4389-b61c-5baba3bd6587" />
 
 **Frozen UNI2-h tile embeddings + CLAM attention-MIL for MSI-H vs MSS classification in TCGA-COAD**
 
