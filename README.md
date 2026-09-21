@@ -10,6 +10,10 @@ This repository contains the code and analysis for a learning/reproduction proje
 
 This is a training project, not a novel clinical or methodological contribution. The task has already been demonstrated in published research and commercialized. The purpose here is to reproduce the basic result with modern pathology foundation-model embeddings, then examine where the result holds up and where it breaks.
 
+
+**Substack Post: https://miketrang.substack.com/p/detecting-a-life-changing-colon-cancer
+**
+
 ---
 
 ## 1. Project scope
